@@ -1,0 +1,256 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+ header {
+    background-color: #333;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+label{
+    position: relative;
+}
+input[type="checkbox"]{
+    position:absolute;
+    display: flex;
+    opacity: 0;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    z-index: 100;
+}
+.dev{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background: #18191f;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+@keyframes glow{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+input[type="checkbox"]:checked~.dev{
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 1s linear infinite;
+}
+
+
+.fonth{
+    font-size: 24px;
+}
+nav {
+    background-color: #444;
+    padding: 10px;
+          
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.dev-con {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 25%;
+    
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+.menu li {
+    margin: 0 1rem;
+    list-style: none;
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    outline: 2px solid orange ;
+}
+.hero-info-img img{
+    width: 100px;
+}
+.hero-con{
+    display: flex;
+    font-size: 24px;
+}
+
+.hero-info-b{
+    font-size: 48px;
+}
+
+.hero-info-g{
+    justify-content: center;
+}
+
+.hero-img img{
+    display: flex;
+    width: 100%;
+
+}
+
+.hero{
+    background-color: #f0f0f0;
+}
+.hero-info{
+    width: 200%;
+    padding: 0.5rem;
+}
+.hero-info h3 {
+    font-size: 36px;
+    color: #333;
+}
+.hero-info p {
+    margin:  0;
+}
+.hero-info .hero-btn{
+    display: inline-block;
+    background-color: rgb(139,69,19);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+.blog-con{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+.blog-item img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb( 0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.blog-item img:hover{
+    outline: 2px solid orange ;
+    transform: scale(1.05);
+}
+.blog-title {
+    margin: 2rem 0;
+}  
+.blog-item h4{
+    margin-top: 1rem;
+}
+.blog-item p{
+    margin: 1rem 0;
+}
+.blog-item a{
+    display: inline-block;
+    color: #ffffff;
+    background-color: rgb(139,69,19);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 15px;
+    
+}
+
+.f-top {
+    background-color: #333;
+    margin-top: 2rem;
+    padding: 2rem;
+    
+    
+}
+
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.experience {
+    margin-bottom: 2em;
+}
+
+.experience-title {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.experience li {
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+.experience-d{
+    margin-top: 0.5em;
+    color: #ffffff;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #979292;
+    color: white;
+}
+.f-btn{
+    display: flex;
+    background-color: rgb(139,69,19);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    
+}
+.fonth{
+    font-size: 24px;
+}
+nav {
+    background-color: #444;
+    padding: 10px;
+          
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.dev-con {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 25%;
+    
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+.menu li {
+    margin: 0 1rem;
+    list-style: none;
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    outline: 2px solid orange ;
+}
+.hero-info-img img{
+    width: 50%;
+}
+.hero-con{
+    display: flex;
+}
+.hero-img img{
+    display: flex;
+    width: 75%;
+
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.project {
+    width: 300px;
+    margin: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* .project-description {
+    padding: 1em;
+    background-color: #fff;
+} */
